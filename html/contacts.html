@@ -11,7 +11,6 @@
     <script src="../js/main.js" defer></script>
 </head>
 <body>
-
     <div class="wrapper">
 
         <header class="header">
@@ -35,7 +34,7 @@
                                 <a href="#" class="menu_list-link">LEASE VS BUY</a>
                             </li>
                             <li class="menu_list-item">
-                                <a href="#" class="menu_list-link">CONTACT US</a>
+                                <a href="#" class="menu_list-link menu_list-link--active">CONTACT US</a>
                             </li>
                         </ul>
                     </nav>
@@ -44,9 +43,37 @@
         </header>
 
         <main class="main">
+            <section class="conatcts">
             <div class="container">
-                
+                <h2 class="section_title contacts_title">Contact Us</h2>
+                <p class="contacts_text">Feel free to contact us with questions, potencial partnerships or media inquiries</p>
+                <form action="#" class="form">
+                    <input type="text" name="name" placeholder="Name" class="form-input">
+                    <input type="text" name="email" placeholder="E-mail" class="form-input">
+                    <textarea name="text" placeholder="Your text" class="form-textarea"></textarea>
+                    <button type="submit" class="form-btn">SUBMIT</button>
+                </form>
             </div>
+        </section>
+
+        <section class="topics">
+            <div class="container">
+                <div class="topics_items">
+                    <div  class="topics_item">
+                        <img src="../img/topicks-1.jpeg" alt="topic" class="topics_item-img">
+                        <p class="topics_item-text">An easier way to buy your next Toyota</p>
+                        <a href="#" class="topics_item-link">more</a>
+                    </div>
+                        <div  class="topics_item">
+                        <img src="../img/topics-2.jpeg" alt="topic" class="topics_item-img">
+                        <p class="topics_item-text">A Guide to Road-Tripping With Pets</p>
+                        <a href="#" class="topics_item-link">more</a>
+                    </div>
+                </div>
+            <a href="#" class="showmore_link">SHOW MORE</a>
+            </div>
+        </section>
+        
         </main>
 
         <footer class="footer">
@@ -148,6 +175,5 @@
         </footer>
 
     </div>
-
 </body>
 </html>
