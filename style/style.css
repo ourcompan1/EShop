@@ -21,14 +21,17 @@ html,body{
     display: flex;
     flex-direction: column;
 }
-
-
+.section_title{
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
 .container{
     max-width: 1220px;
     margin:0 auto;
     padding: 0 10px;
 }
-
 body{
     font-size: 16px;
     font-weight: 400;
@@ -51,7 +54,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items:flex-end;
-
 }
 .menu_list{
     display: flex;
@@ -62,7 +64,6 @@ body{
     text-transform: uppercase;
     font-weight: 700;
 }
-
 .main{
     flex-grow: 1;
 }
@@ -75,10 +76,8 @@ body{
     z-index: 5;
     left: 0;
     right: 0;
-
 }
 .title{
- 
     padding-bottom:40px ;
     font-size: 96px;
     font-weight: 700;
@@ -93,7 +92,6 @@ body{
     font-size: 36px;
     font-weight: 700;
 }
-
 .footer{
     background-color:#151515;
     color:#FFFFFF;
@@ -159,4 +157,105 @@ body{
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal{
     bottom: 50px;
+}
+.why_list{
+    padding: 150px 0;
+}
+.why_list-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);   
+    gap: 40px;
+    text-align: center;
+}    
+.why_list-img{
+    margin-bottom: 30px;
+}
+.why_list-title{
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.why_list-text{
+    text-align: left;
+}
+.how_list{
+    padding-bottom: 150px;
+}
+.how_list-inner{
+    max-width:600px;
+    margin: 0 auto;
+}
+.section_title-mini{
+    font-size: 24px;
+    padding-top: 50px;
+    font-weight: 700;
+}
+.how_list-list{
+    padding: 50px 0 70px;
+    counter-reset: myCounter;
+}
+.how_list-item{
+    list-style-type: none;
+    width: 270px;
+    position: relative;
+    margin-left: auto;
+    box-sizing: content-box;
+    padding: 19px 0 19px 240px;
+    min-height: 63px;
+}
+.how_list-item+.how_list-item{
+    margin-top: 40px;
+}
+.how_list-item::before{
+    position: absolute;
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background-color:#0066FF ;
+    font-weight: 700;
+    font-size: 48px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    left:0;
+}
+.video{
+    margin-bottom: 150px;
+}
+.video_title{
+    margin-bottom: 20px;
+}
+.video_text{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.video_content{
+    display: block;
+    margin: 0 auto;
+}
+.important {
+    margin-bottom: 150px;
+}
+.important_title {
+    margin-bottom: 20px;
+}
+.important-text {
+    margin: 0 auto 50px;
+    min-width: 580px;
+    width: 580px;
+    text-align: left;
+    justify-content: center;
+    display: block;
+}
+.important_list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);   
+}
+.important_list-img {
+    margin-bottom: 20px;
 }
