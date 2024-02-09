@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/main.js' %}" defer></script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header class="header header-main">
+            <div class="container">
+                <div class="header_inner">
+                    <a href="{% url 'index' %}" class="logo">
+                        <img src="{% static 'img/logo.svg' %}" alt="logo" class="logo_img">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu_list">
+                            <li class="menu_list-item">
+                                <a href="{% url 'new_cars' %}" class="menu_list-link">NEW CARS</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="https://av.by" class="menu_list-link">PRE-OWNED CARS</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="{%url 'finance'%}" class="menu_list-link">FINANCE</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="#" class="menu_list-link">LEASE VS BUY</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="{% url 'contacts' %}" class="menu_list-link">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="top">
+                <div class="container">
+                    <h1 class="title">Leasing From D&M</h1>
+                    <a href="{% url 'new_cars'%}" class="top_link">FIND A CAR</a>
+                </div>
+            </section>
+
+            <div class="slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url({% static 'img/slide-1.jpeg' %});"></div>
+                        <div class="swiper-slide" style="background-image: url({% static 'img/slide-2.jpeg' %});"></div>
+                        <div class="swiper-slide" style="background-image: url({% static 'img/slide-1.jpeg' %});"></div>
+                        <div class="swiper-slide" style="background-image: url({% static 'img/slide-2.jpeg' %});"></div> # da eto zvizdec
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <section class="why_list">
+                <div class="container">
+                    <h2 class="section_title">Why Lease with D&M?</h2>
+                    <ul class="why_list-list">
+                        <li class="why_list-item">
+                            <img src="{% static 'img/Top-Dealers.svg' %}" alt="Top Dealers" class="why_list-img">
+                            <h3 class="why_list-title">Top Dealers</h3>
+                            <p class="why_list-text">TrueCar Certified Dealers compete for your business by providing
+                                discounted pricing on in-stock inventory.</p>
+                        </li>
+                        <li class="why_list-item">
+                            <img src="{% static 'img/Discounted-Pricing.svg' %}" alt="Discounted Pricing" class="why_list-img">
+                            <h3 class="why_list-title">Discounted Pricing</h3>
+                            <p class="why_list-text">View local inventory from the comfort of home and get access to
+                                guaranteed savings on the car of your choice.</p>
+                        </li>
+                        <li class="why_list-item">
+                            <img src="{% static 'img/Lower-Payments.svg' %}" alt="Lower Payments" class="why_list-img">
+                            <h3 class="why_list-title">Lower Payments</h3>
+                            <p class="why_list-text">Get discounted pricing when you shop for a car or truck using
+                                TrueCar and save on your lease payment.</p>
+                        </li>
+                        <li class="why_list-item">
+                            <img src="{% static 'img/Easy-upgade.svg' %}" alt="Easy Upgrade" class="why_list-img">
+                            <h3 class="why_list-title">Easy Upgrade</h3>
+                            <p class="why_list-text">Easy to upgrade to the newest vehicle model every few years if you
+                                would like to be modern and comfortable</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="how_list">
+                <div class="container">
+                    <div class="how_list-inner">
+                        <h2 class="section_title">How Does Leasing Work?</h2>
+                        <p class="how_list-text">Leasing a vehicle is essentially entering into a long term rental agreement for that vehicle. Unlike a traditional car purchase, you don’t actually own the vehicle. Instead, a leasing company purchases the vehicle from the dealer on your behalf and then you make monthly payments to the leasing company for the duration of your lease. Some leases however, do provide the option to purchase the vehicle at the end of the lease.</p>
+                <h4 class="section_title-mini">Similar to a short term car rental, there are rules that define:</h4>
+                <ol class="how_list-list">
+                    <li class="how_list-item">
+                        How much you can drive, stated as annual miles (excess miles are charged at a specified rate)
+                    </li>
+                    <li class="how_list-item">
+                        Types of damage that you may be liable for at the end of your lease
+                    </li>
+                    <li class="how_list-item">
+                    The procedures and costs when you return the vehicle at the end of your lease
+                    </li>
+                </ol>
+
+                        <p class="how_list-text">Lease contracts are a commitment and ending them early can be difficult and expensive so it is important to consider your circumstances carefully before you decide.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video">
+                <div class="container">
+                    <h2 class="section_title video_title">
+                        WELCOME TO D&M LEASING
+                    </h2>
+                    <p class="video_text">
+                        Find out how easy it is to lease from D&M
+                    </p>
+                    <iframe class="video_content" width="1000" height="500" src="https://www.youtube.com/embed/nDKEGU9VvB8?si=eIT1u57M4Q3yKl0b&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section class="important">
+                <div class="container">
+                        <h2 class="section_title important_title">
+                            Important Things to Consider
+                        </h2>
+                        <p class="important-text">
+                            Depending on your circumstances and what is important to you, a lease could be a great option for your next vehicle. Below are some important factors that may influence your decision.
+                        </p>
+                        <ul class="important_list">
+                            <li class="important_list-item">
+                                <img src="{% static 'img/important-1.jpeg' %}" alt="car" class="important_list-img">
+                                <p class="important_list-text">Monthly payments on leases are generally 20% - 30% cheaper than loans</p>
+                            </li>
+                            <li class="important_list-item">
+                                <img src="{% static 'img/important-2.jpeg' %}" alt="car" class="important_list-img">
+                                <p class="important_list-text">You may be eligible for a tax break if you use the leased vehicle for business purposes</p>
+                            </li>
+                            <li class="important_list-item">
+                                <img src="{% static 'img/important-3.jpeg' %}" alt="car" class="important_list-img">
+                                <p class="important_list-text">Easy to upgrade to the newest vehicle model every few years</p>
+                            </li>
+                            <li class="important_list-item">
+                                <img src="{% static 'img/important-4.jpeg' %}" alt="chevrolet-logo" class="important_list-img">
+                                <p class="important_list-text">There are often fees charged if you drive more than your lease's mileage allowance</p>
+                            </li>
+                        </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer_menu">
+                    <ul class="footer_menu-list">
+                        <li class="footer_menu-item">
+                            <p class="footer_menu-title">Products</p>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="https://av.by" class="footer_menu-link">Used</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="{% url 'new_cars'%}" class="footer_menu-link">New</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="https://av.by" class="footer_menu-link">Sell your car</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu-list">
+                        <li class="footer_menu-item">
+                            <p class="footer_menu-title">Resources</p>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="https://github.com/ourcompan1" class="footer_menu-link">Blog</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="https://www.mercedes-benz.co.uk/passengercars/services/faq.html" class="footer_menu-link">FAQ</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="{% url 'contacts'%}" class="footer_menu-link">Contact us</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu-list">
+                        <li class="footer_menu-item">
+                            <p class="footer_menu-title">Work With TrueCar</p>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="https://github.com/ourcompan1" class="footer_menu-link">Dealers</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="https://av.by" class="footer_menu-link">Partners</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu-list">
+                        <li class="footer_menu-item">
+                            <p class="footer_menu-title">About</p>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="{% url 'index'%}" class="footer_menu-link">About us</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="https://github.com/ourcompan1" class="footer_menu-link">Team</a>
+                        </li>
+                        <li class="footer_menu-item">
+                            <a href="https://alizing.by/career" class="footer_menu-link">Careers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="app">
+                    <li class="app_item">
+                        <a href="#" class="app_item-link">
+                            <img src="{% static 'img/appstore.svg' %}" alt="appstore" class="app_item-img">
+                        </a>
+                    </li>
+                    <li class="app_item">
+                        <a href="#" class="app_item-link">
+                            <img src="{% static 'img/playmarket.svg' %}" alt="googleplay" class="app_item-img">
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer_copy">
+                    <p class="footer_copy-text">
+                        For questions about the TrueCar Auto Buying Service please call 1-888-878-3227.
+                        Certified Dealers are contractually obligated by TrueCar to meet certain customer
+                        service requirements and complete the TrueCar Dealer Certification Program.
+                    </p>
+                    <p class="footer_copy-text">
+                        TrueCar does not broker, sell, or lease motor vehicles. Unless otherwise noted,
+                        all vehicles shown on this website are offered for sale by licensed motor vehicle
+                        dealers. All vehicles are subject to prior sale. By accessing this website,
+                        you agree to the TrueCar Terms of Service and Privacy Policy.
+                    </p>
+                </div>
+                <nav class="copy_nav">
+                    <ul class="copy_nav-list">
+                        <li class="copy_nav-item">
+                            <a href="https://www.mbusa.com/content/dam/mb-nafta/us/legal/mbrace_Terms_of_Service.pdf" class="copy_nav-link">Terms of Service</a>
+                        </li>
+                        <li class="copy_nav-item">
+                            <a href="https://www.mercedes-benz.ca/en/legal-notices/privacy-policy#:~:text=At%20Mercedes-Benz%20Canada%20Inc.%20(MBC)%2C,at%20our%20corporately%20owned%20dealerships" class="copy_nav-link">Privacy Policy</a>
+                        </li>
+                        <li class="copy_nav-item">
+                            <a href="https://www.mbusa.com/en/legal-notices/privacy-statement" class="copy_nav-link">Do Not Sell My Personal Information</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
