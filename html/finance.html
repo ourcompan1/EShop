@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>Finance</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -11,6 +11,7 @@
     <script src="../js/main.js" defer></script>
 </head>
 <body>
+
     <div class="wrapper">
 
         <header class="header">
@@ -28,13 +29,13 @@
                                 <a href="#" class="menu_list-link">PRE-OWNED CARS</a>
                             </li>
                             <li class="menu_list-item">
-                                <a href="#" class="menu_list-link">FINANCE</a>
+                                <a href="#" class="menu_list-link menu_list-link--active">FINANCE</a>
                             </li>
                             <li class="menu_list-item">
                                 <a href="#" class="menu_list-link">LEASE VS BUY</a>
                             </li>
                             <li class="menu_list-item">
-                                <a href="#" class="menu_list-link menu_list-link--active">CONTACT US</a>
+                                <a href="#" class="menu_list-link">CONTACT US</a>
                             </li>
                         </ul>
                     </nav>
@@ -43,37 +44,40 @@
         </header>
 
         <main class="main">
-            <section class="conatcts">
-            <div class="container">
-                <h2 class="section_title contacts_title">Contact Us</h2>
-                <p class="contacts_text">Feel free to contact us with questions, potencial partnerships or media inquiries</p>
-                <form action="#" class="form">
-                    <input type="text" name="name" placeholder="Name" class="form-input">
-                    <input type="text" name="email" placeholder="E-mail" class="form-input">
-                    <textarea name="text" placeholder="Your text" class="form-textarea"></textarea>
-                    <button type="submit" class="form-btn">SUBMIT</button>
-                </form>
-            </div>
-        </section>
 
-        <section class="topics">
-            <div class="container">
-                <div class="topics_items">
-                    <div  class="topics_item">
-                        <img src="../img/topicks-1.jpeg" alt="topic" class="topics_item-img">
-                        <p class="topics_item-text">An easier way to buy your next Toyota</p>
-                        <a href="#" class="topics_item-link">more</a>
-                    </div>
-                        <div  class="topics_item">
-                        <img src="../img/topics-2.jpeg" alt="topic" class="topics_item-img">
-                        <p class="topics_item-text">A Guide to Road-Tripping With Pets</p>
-                        <a href="#" class="topics_item-link">more</a>
-                    </div>
+            <section class="credit">
+                <div class="container">
+                    <h2 class="section_title">Payment</h2>
+                    <p class="contacts_text credit_text">Pay for the car you want to lease</p>
+                    <form action="#" method="post" class="card_form">
+                        <input type="text" name="card-car" class="card_form-input" placeholder="Name of car">
+                        <input type="text" class="card_form-input" name="card-number" maxlength="16" pattern="[0-9]{16}" required placeholder="Card Number">
+                        <input type="text" class="card_form-input" name="card-name" required placeholder="Owner's name">
+                        <input type="text" class="card_form-input" name="card-expiry" placeholder="MM/YY" maxlength="5" pattern="(0[1-9]|1[0-2])/[0-9]{2}$" required>
+                        <input type="text" class="card_form-input" name="card-cvv" maxlength="3" pattern="[0-9]{3}" required placeholder="CVV">
+                        <button type="submit" class="form-btn credit_btn">SUBMIT</button>
+                      </form>
                 </div>
-            <a href="#" class="showmore_link">SHOW MORE</a>
-            </div>
-        </section>
-        
+            </section>
+
+            <section class="topics">
+                <div class="container">
+                    <div class="topics_items">
+                        <div  class="topics_item">
+                            <img src="../img/topicks-1.jpeg" alt="topic" class="topics_item-img">
+                            <p class="topics_item-text">An easier way to buy your next Toyota</p>
+                            <a href="#" class="topics_item-link">more</a>
+                        </div>
+                            <div  class="topics_item">
+                            <img src="../img/topics-2.jpeg" alt="topic" class="topics_item-img">
+                            <p class="topics_item-text">A Guide to Road-Tripping With Pets</p>
+                            <a href="#" class="topics_item-link">more</a>
+                        </div>
+                    </div>
+                <a href="#" class="showmore_link">SHOW MORE</a>
+                </div>
+            </section>
+
         </main>
 
         <footer class="footer">
@@ -175,5 +179,6 @@
         </footer>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
