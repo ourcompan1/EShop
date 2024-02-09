@@ -377,31 +377,63 @@ body{
     display: flex;
 }
 .catalog{
-    margin: 100px 0 150px;
+    padding: 100px 0 150px;
 }
-.section_title {
-}
-.tabs {
+.tabs_content{
+    margin-bottom: 70px;
 }
 .tabs_btn {
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    gap:80px;
+    padding-bottom: 100px;
 }
 .tabs_btn-item {
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    padding: 0;
 }
 .tabs_btn-item--active {
-}
-.tabs_content {
+    color: #0066FF;
 }
 .tabs_content-item {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 100px 40px;
 }
 .car_card {
+    text-align: center;
 }
-.card_img {
+.card-content{
+    padding: 0 5px;
+    border: 1px solid #0066FF;
+    border-top: 0;
 }
 .card_title {
+    padding-top: 20px;
+    margin-bottom:20px ;
+    font-size: 24px;
+    font-weight: 700;
 }
-.card_text {
+.card_text {  
+    margin-bottom:20px ;
+}
+.card_img{
+    display: block;
 }
 .card_price {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0 5px;
+    margin-bottom:20px ;
 }
 .card_link {
-}
+display: block;
+color: #0066FF;
+border: 1px solid #0066FF;
+border-top: 0;
+} 
