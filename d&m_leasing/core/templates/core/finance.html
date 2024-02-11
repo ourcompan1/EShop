@@ -33,7 +33,7 @@
                                 <a href="{% url 'finance'%}" class="menu_list-link menu_list-link--active">FINANCE</a>
                             </li>
                             <li class="menu_list-item">
-                                <a href="#" class="menu_list-link">LEASE VS BUY</a>
+                                <a href="{% url 'l_vs_b' %}" class="menu_list-link">LEASE VS BUY</a>
                             </li>
                             <li class="menu_list-item">
                                 <a href="{% url 'contacts'%}" class="menu_list-link">CONTACT US</a>
@@ -50,12 +50,13 @@
                 <div class="container">
                     <h2 class="section_title">Payment</h2>
                     <p class="contacts_text credit_text">Pay for the car you want to lease</p>
-                    <form action="#" method="post" class="card_form">
+                    <form action="{% url 'finance'%}" method="post" class="card_form">
                         <input type="text" name="card-car" class="card_form-input" placeholder="Name of car">
                         <input type="text" class="card_form-input" name="card-number" maxlength="16" pattern="[0-9]{16}" required placeholder="Card Number">
                         <input type="text" class="card_form-input" name="card-name" required placeholder="Owner's name">
                         <input type="text" class="card_form-input" name="card-expiry" placeholder="MM/YY" maxlength="5" pattern="(0[1-9]|1[0-2])/[0-9]{2}$" required>
                         <input type="text" class="card_form-input" name="card-cvv" maxlength="3" pattern="[0-9]{3}" required placeholder="CVV">
+                        {% csrf_token %}
                         <button type="submit" class="form-btn credit_btn">SUBMIT</button>
                       </form>
                 </div>
@@ -67,15 +68,15 @@
                         <div  class="topics_item">
                             <img src="{% static 'img/topicks-1.jpeg' %}" alt="topic" class="topics_item-img">
                             <p class="topics_item-text">An easier way to buy your next Toyota</p>
-                            <a href="#" class="topics_item-link">more</a>
+                            <a href="https://www.toyota.com/smartpath/how-it-works/" class="topics_item-link">more</a>
                         </div>
                             <div  class="topics_item">
-                            <img src="{% static 'img/topics-2.jpeg'%}" alt="topic" class="topics_item-img">
+                            <img src="{% static 'img/topics-2.jpeg' %}" alt="topic" class="topics_item-img">
                             <p class="topics_item-text">A Guide to Road-Tripping With Pets</p>
-                            <a href="#" class="topics_item-link">more</a>
+                            <a href="https://medium.com/healthypets/a-pet-parents-guide-to-road-trips-59ea88762f46" class="topics_item-link">more</a>
                         </div>
                     </div>
-                <a href="#" class="showmore_link">SHOW MORE</a>
+                <a href="https://www.mercedes-benz.com/en/vehicles/mercedes-maybach/the-new-mercedes-maybach-gls/" class="showmore_link">SHOW MORE</a>
                 </div>
             </section>
 

@@ -32,7 +32,7 @@
                                 <a href="{% url 'finance'%}" class="menu_list-link">FINANCE</a>
                             </li>
                             <li class="menu_list-item">
-                                <a href="#" class="menu_list-link">LEASE VS BUY</a>
+                                <a href="{% url 'l_vs_b'%}" class="menu_list-link">LEASE VS BUY</a>
                             </li>
                             <li class="menu_list-item">
                                 <a href="{% url 'contacts'%}" class="menu_list-link menu_list-link--active">CONTACT US</a>
@@ -48,10 +48,11 @@
             <div class="container">
                 <h2 class="section_title contacts_title">Contact Us</h2>
                 <p class="contacts_text">Feel free to contact us with questions, potencial partnerships or media inquiries</p>
-                <form action="#" class="form">
+                <form action="{% url 'contacts' %}" class="form" method="post">
                     <input type="text" name="name" placeholder="Name" class="form-input">
                     <input type="text" name="email" placeholder="E-mail" class="form-input">
                     <textarea name="text" placeholder="Your text" class="form-textarea"></textarea>
+                    {% csrf_token %}
                     <button type="submit" class="form-btn">SUBMIT</button>
                 </form>
             </div>
