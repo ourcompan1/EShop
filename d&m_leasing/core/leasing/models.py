@@ -13,6 +13,39 @@ class Car(models.Model):
         verbose_name_plural = 'Cars'
 
 
+class Truck(models.Model):
+    name = models.CharField(max_length=200)
+    price = models.IntegerField()
+    month_price = models.IntegerField()
+    img = models.ImageField(upload_to='photos')
+
+    class Meta:
+        verbose_name = 'Truck'
+        verbose_name_plural = 'Trucks'
+
+
+class Crossover(models.Model):
+    name = models.CharField(max_length=200)
+    price = models.IntegerField()
+    month_price = models.IntegerField()
+    img = models.ImageField(upload_to='photos')
+
+    class Meta:
+        verbose_name = 'Crossover'
+        verbose_name_plural = 'Crossovers'
+
+
+class Electrified(models.Model):
+    name = models.CharField(max_length=200)
+    price = models.IntegerField()
+    month_price = models.IntegerField()
+    img = models.ImageField(upload_to='photos')
+
+    class Meta:
+        verbose_name = 'Electrified'
+        verbose_name_plural = 'Electrifieds'
+
+
 class Feedback(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField()

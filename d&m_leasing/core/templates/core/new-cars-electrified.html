@@ -50,24 +50,16 @@
                   <h2 class="section_title">Choose your car</h2>
                   <div class="tabs">
                     <div class="tabs_btn">
-                        <button class="tabs_btn-item tabs_btn-item--active"><a href="{% url 'new_cars'%}">Car and Minivan</a></button>
+                      <button class="tabs_btn-item"><a href="{% url 'new_cars'%}">Car and Minivan</a></button>
                       <button class="tabs_btn-item"><a href="{% url 'new_cars_truck' %}">Trucks</a></button>
                       <button class="tabs_btn-item"><a href="{% url 'new_cars_crossover'%}">Crossovers & SUVs</a></button>
-                      <button class="tabs_btn-item"><a href="{% url 'new_cars_electrified'%}">Electrified</a></button>
+                      <button class="tabs_btn-item tabs_btn-item--active"><a href="{% url 'new_cars_electrified'%}">Electrified</a></button>
                     </div>
                     <div class="tabs_content">
                       <div class="tabs_content-item">
 
 
-                        <div class="car_card">
-                          <img src="{% static 'img/card-1.jpeg' %}" alt="car-card" class="card_img">
-                          <div class="card-content">
-                            <h4 class="card_title">Toyota Crown 2023</h4>
-                            <p class="card_text">starting from $39,900</p>
-                            <p class="card_price">$650/mo</p>
-                          </div>
-                          <a href="https://www.drive.ru/brands/mercedes/models/2019/maybach_gls/600_4matic" class="card_link">see details</a>
-                        </div>
+
 
 
                           {% for car in cars %}

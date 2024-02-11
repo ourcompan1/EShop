@@ -11,6 +11,21 @@ def new_cars(request):
     return render(request, 'core/new-cars.html', {'cars': cars})
 
 
+def new_cars_truck(request):
+    cars = models.Truck.objects.all()
+    return render(request, 'core/new-cars-truck.html', {'cars': cars})
+
+
+def new_cars_crossover(request):
+    cars = models.Crossover.objects.all()
+    return render(request, 'core/new-cars-crossover.html', {'cars': cars})
+
+
+def new_cars_electrified(request):
+    cars = models.Electrified.objects.all()
+    return render(request, 'core/new-cars-electrified.html', {'cars': cars})
+
+
 def contacts(request):
     if request.method == 'POST':
         data = request.POST
